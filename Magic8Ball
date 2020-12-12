@@ -1,0 +1,86 @@
+
+ var userName = prompt("What is your name?");
+
+if (userName) {
+    console.log("Hello " + userName + "!")
+} else {
+    console.log("Hello!")
+};
+
+var userQuestion = prompt("Please ask a question.");
+
+console.log(userName + ", Your question is: " + userQuestion);
+
+var randomNumber = Math.floor(Math.random() * 8);
+
+var eightBall = "";
+
+if (randomNumber == 0) {
+   eightBall = "It is certain!";
+} else if(randomNumber == 1) {
+    eightBall = "Better not tell you now";
+} else if(randomNumber == 2) {
+    eightBall = "Concentrate and ask again";
+} else if(randomNumber == 3) {
+    eightBall = "Reply hazy try again";
+} else if(randomNumber = 4) {
+    eightBall = "Cannot predict now";
+} else if(randomNumber = 5) {
+    eightBall = "My reply is no!";
+} else if(randomNumber == 6) {
+    eightBall = "My sources say no";
+} else if(randomNumber == 7) {
+    eightBall = "Outlook not so good.";
+} else {
+    eightBall = "Signs point to yes"
+};
+
+console.log(eightBall);
+
+//This is an alternate way to code the magic8ball using switch statements
+/*var userName = prompt("What is your name?");
+
+if (userName) {
+    console.log("Hello " + userName + "!")
+} else {
+    console.log("Hello! Please enter a name");
+};
+
+var questionPrompt = prompt("Please ask a question");
+
+console.log("Your question, " + userName + ", is: " + questionPrompt );
+
+var newNumber = Math.floor(Math.random() * 8);
+
+var eightBall = "";
+
+switch(newNumber) {
+    case 1:
+      eightBall = "It is certain!";
+      break;
+    case 2:
+      eightBall = "Hmm...maybe.";
+      break;
+    case 3:
+      eightBall = "No! No! No!";
+      break;
+    case 4:
+      eightBall = "Signs point to yes";
+      break;
+    case 5:
+      eightBall = "Outlook not so good";
+      break;
+    case 6:
+      eightBall = "Hmm.. difficult to predict right now.";
+      break;
+    case 7:
+      eightBall = "Reply hazy, try again later.";
+      break;
+    case 8:
+      eightBall = "My sources say absolutely not!";
+      break;
+     default:
+       eightBall = "Ask a question!";
+};
+
+console.log(eightBall);*/
